@@ -33,6 +33,10 @@ if age_ok and score_ok and attendance_ok and discipline_ok:
 else:
     print(name, "is NOT eligible for the scholarship.")
 
+
+
+
+
 #Bonus score is not needed
 #If statememnts for age waas not needed
-#Age was not used as a requirement in the final checking for eligibility
+#Age was not used as a requirement in the final checking for eligibility.
