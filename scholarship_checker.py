@@ -11,7 +11,7 @@ print ()
 print ("=" * 40)
 print ()
 
-if age <= 18:
+if age >= 18:
     print("Age requirement satisfied.")
 else:
     print("Age requirement not satisfied.")
@@ -23,12 +23,12 @@ else:
 
 attendance_ok = attendance >= 60
 
-discipline_ok = discipline == "yes"
+discipline_ok = discipline == "no"
 
-if score_ok or attendance_ok and discipline_ok:
+if score_ok and attendance_ok and discipline_ok:
     print(name, "is eligible for the scholarship.")
 else:
     print(name, "is NOT eligible for the scholarship.")
 
-bonus = score - 5
+bonus = score + 5
 print("Bonus Score:", bonus)
