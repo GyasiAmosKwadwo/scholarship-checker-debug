@@ -29,9 +29,18 @@ attendance_ok = attendance >= 60
 discipline_ok = discipline == "no"
 
 if age_ok and score_ok and attendance_ok and discipline_ok:
-    print(name, "is eligible for the scholarship.")
+    print(f"{name}is eligible for the scholarship.")
 else:
-    print(name, "is NOT eligible for the scholarship.")
+    print(f"{name}is NOT eligible for the scholarship.")
+    print("Reason(s):")
+    if not age_ok:
+        print("Must be at least 18 years old.")
+    if not score_ok:
+        print(f"Score ({score}) is below the required 75.")
+    if not attendance_ok:
+        print(f"Attendance ({attendance}%) is below the required 80%.")
+    if not discipline_ok:
+        print("Disciplinary issues on record.")
 
 #Bonus score is not needed
 #If statememnts for age waas not needed
